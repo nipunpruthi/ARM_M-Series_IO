@@ -21,4 +21,4 @@
 > 
 > R25, R29 connect PB1, PB0 to the USB
 
-6. To use LED, make PF1, PF2, PF3 output pin and output a one.
+6. To use LED, make PF1, PF2, PF3 output pin and output a '1'.

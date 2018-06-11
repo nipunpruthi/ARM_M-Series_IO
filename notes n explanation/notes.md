@@ -2,8 +2,7 @@
 1. The regular function of a pin is to perform I/O, however, most pins have an alternative function.
    e.g. PA1 and PA0 can be either regular parallel port or an asynchronous serial port(UART).
 
-1. The ability to manage time as an input measurement and an output parameter has made a significant impact on the market
-   share growth of micro-controller.
+1. The ability to manage time as an input measurement and an output parameter has made a significant impact on the market share growth of micro-controller.
 
 3. JTAG(Joint Test Action Group) is a standard test access port used to program and debug micro-controller board.
    JTAG uses 5 pins.
@@ -12,11 +11,10 @@
 
 5. Two buses used for I/O. Digital I/O is connected to both.
 
-6. Each pin has a configuration bit in the GPIOAMSEL register. We set this port pin to connect the port pin to the 
-   ADC or analog comparator.
+6. Each pin has a configuration bit in the GPIOAMSEL register. We set this port pin to connect the port pin to the ADC or analog comparator.
 
 7. For Digital function each pin also has four bits in GPIOPCTL register, which we set to specify the alternative function
-   for that pin.(PC0 to PC3 are reserved for JTAG debugger)
+   for that pin.(**PC0 to PC3 are reserved for JTAG debugger**)
 
 > Notice, most alternate function modules (e.g., U0Rx) only exist on one pin (PA0). While other functions could be mapped 
    to two or three pins (e.g., CAN0Rx could be mapped to one of the following: PB4, PE4, or PF0.)
