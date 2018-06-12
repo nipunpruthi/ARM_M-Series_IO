@@ -50,8 +50,18 @@ int main(void){ unsigned long volatile delay;
 	GPIO_PORTF_DATA_R = 0x04;
 	
 	EnableInterrupts();           // enable interrupts for the grader
+
+	while(1){
+
+		Delay100ms();
+		if( PF4 == 0x10)
+			PF2 = 0x04;
+		else
+			PF2 = PF2 ^ 0x04;
+
+	}
   
-	while (1){
+	/* while (1){
 	  Delay100ms();
 	  while( PF4 == 0 ){
 	    PF2 = ~PF2;
@@ -59,7 +69,7 @@ int main(void){ unsigned long volatile delay;
 	  }
 	  PF2 = 0x04;
 	}
-	
+	*/
 }
 
 void Delay100ms(void){
