@@ -51,6 +51,7 @@ int main(void){
         GPIO_PORTF_DATA_R = out;        // output
     }
 }
+
 // Subroutine to initialize port F pins for I/O
 // PF4 is input switch1 and PF2 is output LED blue
 // Input : None
