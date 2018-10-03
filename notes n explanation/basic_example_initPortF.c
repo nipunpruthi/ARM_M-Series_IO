@@ -69,3 +69,4 @@ void PortF_Init(void){
     GPIO_PORTF_PUR_R = 0x11;            // enable pullup register on PF0 and PF4
     GPIO_PORTF_DEN_R = 0x1F;            // 7) enable digital io on PF0-4
 }
+/
